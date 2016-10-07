@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="axL-Cf-Z5q">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TalCookie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="am1-p1-VXF">
+                                <state key="normal" title="Pair with a new client"/>
+                                <connections>
+                                    <action selector="pairButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6uz-Nc-5gK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J1a-J0-krC">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="ELt-5Z-Ian"/>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="am1-p1-VXF" secondAttribute="bottom" constant="60" id="5Hd-Sh-YpU"/>
+                            <constraint firstItem="J1a-J0-krC" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8yv-lx-ALX"/>
+                            <constraint firstItem="J1a-J0-krC" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="QeB-sg-WFn"/>
+                            <constraint firstItem="am1-p1-VXF" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="SO2-fi-wzk"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="J1a-J0-krC" secondAttribute="trailing" id="bcF-7i-9F2"/>
+                            <constraint firstItem="ELt-5Z-Ian" firstAttribute="top" secondItem="J1a-J0-krC" secondAttribute="bottom" constant="10" id="c9h-0Z-GC4"/>
+                            <constraint firstItem="ELt-5Z-Ian" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fRw-oB-gEw"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="am1-p1-VXF" secondAttribute="trailing" id="hDG-5t-qkI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="J2B-zD-HP4"/>
+                    <connections>
+                        <outlet property="pairButton" destination="am1-p1-VXF" id="P51-VM-7Ed"/>
+                        <outlet property="pairedLabel" destination="J1a-J0-krC" id="cOU-2I-E7J"/>
+                        <outlet property="pairingActivityIndicator" destination="ELt-5Z-Ian" id="K34-bE-Thw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448.8" y="-579.76011994002999"/>
+        </scene>
+        <!--Reader View Controller-->
+        <scene sceneID="gBq-3c-Ilg">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lm0-rW-n0C" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="QRReaderViewController" id="nf0-Ci-vXM" customClass="QRReaderViewController" customModule="TalCookie" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b5Z-92-WCg"/>
+                        <viewControllerLayoutGuide type="bottom" id="LQy-zQ-v78"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fuU-3P-gbP">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cKv-49-d1c">
+                        <barButtonItem key="leftBarButtonItem" title="Cancel" id="g05-PC-JZm">
+                            <connections>
+                                <action selector="cancelButtonTapped:" destination="nf0-Ci-vXM" id="uwD-1m-0n1"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2388" y="-1272.4137931034484"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ve2-Rr-G6S">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="axL-Cf-Z5q" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RWl-PV-nbB">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="lq8-HL-MTY"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fgY-QU-cl2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="544.79999999999995" y="-578.86056971514245"/>
+        </scene>
+        <!--Reader Navigation View Controller-->
+        <scene sceneID="bt8-dz-So2">
+            <objects>
+                <navigationController storyboardIdentifier="QRReaderNavigationViewController" automaticallyAdjustsScrollViewInsets="NO" id="lbf-EU-Fn3" customClass="QRReaderNavigationViewController" customModule="TalCookie" customModuleProvider="target" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kf7-o8-5AE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="nf0-Ci-vXM" kind="relationship" relationship="rootViewController" id="OwH-1c-R9K"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BaG-LS-6as" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1448.8" y="-1272.4137931034484"/>
+        </scene>
+    </scenes>
+</document>

@@ -1,0 +1,848 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B9B237771DA6C22400A0761B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B237761DA6C22400A0761B /* AppDelegate.swift */; };
+		B9B237791DA6C22400A0761B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B237781DA6C22400A0761B /* ViewController.swift */; };
+		B9B2377C1DA6C22400A0761B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B2377A1DA6C22400A0761B /* Main.storyboard */; };
+		B9B2377E1DA6C22400A0761B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B2377D1DA6C22400A0761B /* Assets.xcassets */; };
+		B9B237811DA6C22400A0761B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B2377F1DA6C22400A0761B /* LaunchScreen.storyboard */; };
+		B9B2378C1DA6C22400A0761B /* TalCookieTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B2378B1DA6C22400A0761B /* TalCookieTests.swift */; };
+		B9B237971DA6C22400A0761B /* TalCookieUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B237961DA6C22400A0761B /* TalCookieUITests.swift */; };
+		B9B2379C1DA6C22400A0761B /* TalCookie WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = B9B2379B1DA6C22400A0761B /* TalCookie WatchKit App.app */; };
+		B9B237A21DA6C22400A0761B /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B9B237A01DA6C22400A0761B /* Interface.storyboard */; };
+		B9B237A41DA6C22400A0761B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B237A31DA6C22400A0761B /* Assets.xcassets */; };
+		B9B237AB1DA6C22500A0761B /* TalCookie WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = B9B237AA1DA6C22500A0761B /* TalCookie WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		B9B237B21DA6C22500A0761B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B237B11DA6C22500A0761B /* InterfaceController.swift */; };
+		B9B237B41DA6C22500A0761B /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B237B31DA6C22500A0761B /* ExtensionDelegate.swift */; };
+		B9B237B61DA6C22500A0761B /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B237B51DA6C22500A0761B /* NotificationController.swift */; };
+		B9B237B81DA6C22500A0761B /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9B237B71DA6C22500A0761B /* ComplicationController.swift */; };
+		B9B237BA1DA6C22500A0761B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B9B237B91DA6C22500A0761B /* Assets.xcassets */; };
+		B9F891971DA70696009D2D92 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F891961DA70696009D2D92 /* NotificationManager.swift */; };
+		B9F8919D1DA70CEB009D2D92 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8919C1DA70CEB009D2D92 /* Utilities.swift */; };
+		B9F891A01DA71E8A009D2D92 /* QRReaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F8919F1DA71E8A009D2D92 /* QRReaderViewController.swift */; };
+		B9F891A21DA75930009D2D92 /* QRReaderNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B9F891A11DA75930009D2D92 /* QRReaderNavigationViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9B237881DA6C22400A0761B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B2376B1DA6C22300A0761B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B237721DA6C22400A0761B;
+			remoteInfo = TalCookie;
+		};
+		B9B237931DA6C22400A0761B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B2376B1DA6C22300A0761B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B237721DA6C22400A0761B;
+			remoteInfo = TalCookie;
+		};
+		B9B2379D1DA6C22400A0761B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B2376B1DA6C22300A0761B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B2379A1DA6C22400A0761B;
+			remoteInfo = "TalCookie WatchKit App";
+		};
+		B9B237AC1DA6C22500A0761B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9B2376B1DA6C22300A0761B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9B237A91DA6C22500A0761B;
+			remoteInfo = "TalCookie WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9B237C11DA6C22500A0761B /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B9B237AB1DA6C22500A0761B /* TalCookie WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B237C51DA6C22500A0761B /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				B9B2379C1DA6C22400A0761B /* TalCookie WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B9B237731DA6C22400A0761B /* TalCookie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TalCookie.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B237761DA6C22400A0761B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B9B237781DA6C22400A0761B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B9B2377B1DA6C22400A0761B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B9B2377D1DA6C22400A0761B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9B237801DA6C22400A0761B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B9B237821DA6C22400A0761B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B237871DA6C22400A0761B /* TalCookieTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalCookieTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B2378B1DA6C22400A0761B /* TalCookieTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalCookieTests.swift; sourceTree = "<group>"; };
+		B9B2378D1DA6C22400A0761B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B237921DA6C22400A0761B /* TalCookieUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TalCookieUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B237961DA6C22400A0761B /* TalCookieUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalCookieUITests.swift; sourceTree = "<group>"; };
+		B9B237981DA6C22400A0761B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B2379B1DA6C22400A0761B /* TalCookie WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TalCookie WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B237A11DA6C22400A0761B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		B9B237A31DA6C22400A0761B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9B237A51DA6C22400A0761B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9B237AA1DA6C22500A0761B /* TalCookie WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "TalCookie WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9B237B01DA6C22500A0761B /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		B9B237B11DA6C22500A0761B /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		B9B237B31DA6C22500A0761B /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		B9B237B51DA6C22500A0761B /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		B9B237B71DA6C22500A0761B /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		B9B237B91DA6C22500A0761B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B9B237BB1DA6C22500A0761B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B9F891961DA70696009D2D92 /* NotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		B9F8919C1DA70CEB009D2D92 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		B9F8919E1DA70F9F009D2D92 /* TalCookie.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TalCookie.entitlements; sourceTree = "<group>"; };
+		B9F8919F1DA71E8A009D2D92 /* QRReaderViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRReaderViewController.swift; sourceTree = "<group>"; };
+		B9F891A11DA75930009D2D92 /* QRReaderNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRReaderNavigationViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9B237701DA6C22400A0761B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B237841DA6C22400A0761B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B2378F1DA6C22400A0761B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B237A71DA6C22500A0761B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B9B2376A1DA6C22300A0761B = {
+			isa = PBXGroup;
+			children = (
+				B9B237751DA6C22400A0761B /* TalCookie */,
+				B9B2378A1DA6C22400A0761B /* TalCookieTests */,
+				B9B237951DA6C22400A0761B /* TalCookieUITests */,
+				B9B2379F1DA6C22400A0761B /* TalCookie WatchKit App */,
+				B9B237AE1DA6C22500A0761B /* TalCookie WatchKit Extension */,
+				B9B237741DA6C22400A0761B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B9B237741DA6C22400A0761B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9B237731DA6C22400A0761B /* TalCookie.app */,
+				B9B237871DA6C22400A0761B /* TalCookieTests.xctest */,
+				B9B237921DA6C22400A0761B /* TalCookieUITests.xctest */,
+				B9B2379B1DA6C22400A0761B /* TalCookie WatchKit App.app */,
+				B9B237AA1DA6C22500A0761B /* TalCookie WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9B237751DA6C22400A0761B /* TalCookie */ = {
+			isa = PBXGroup;
+			children = (
+				B9F8919E1DA70F9F009D2D92 /* TalCookie.entitlements */,
+				B9B237761DA6C22400A0761B /* AppDelegate.swift */,
+				B9F891961DA70696009D2D92 /* NotificationManager.swift */,
+				B9F8919F1DA71E8A009D2D92 /* QRReaderViewController.swift */,
+				B9F891A11DA75930009D2D92 /* QRReaderNavigationViewController.swift */,
+				B9B237781DA6C22400A0761B /* ViewController.swift */,
+				B9B2377A1DA6C22400A0761B /* Main.storyboard */,
+				B9B2377D1DA6C22400A0761B /* Assets.xcassets */,
+				B9B2377F1DA6C22400A0761B /* LaunchScreen.storyboard */,
+				B9B237821DA6C22400A0761B /* Info.plist */,
+				B9F8919C1DA70CEB009D2D92 /* Utilities.swift */,
+			);
+			path = TalCookie;
+			sourceTree = "<group>";
+		};
+		B9B2378A1DA6C22400A0761B /* TalCookieTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9B2378B1DA6C22400A0761B /* TalCookieTests.swift */,
+				B9B2378D1DA6C22400A0761B /* Info.plist */,
+			);
+			path = TalCookieTests;
+			sourceTree = "<group>";
+		};
+		B9B237951DA6C22400A0761B /* TalCookieUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B9B237961DA6C22400A0761B /* TalCookieUITests.swift */,
+				B9B237981DA6C22400A0761B /* Info.plist */,
+			);
+			path = TalCookieUITests;
+			sourceTree = "<group>";
+		};
+		B9B2379F1DA6C22400A0761B /* TalCookie WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				B9B237A01DA6C22400A0761B /* Interface.storyboard */,
+				B9B237A31DA6C22400A0761B /* Assets.xcassets */,
+				B9B237A51DA6C22400A0761B /* Info.plist */,
+			);
+			path = "TalCookie WatchKit App";
+			sourceTree = "<group>";
+		};
+		B9B237AE1DA6C22500A0761B /* TalCookie WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				B9B237B11DA6C22500A0761B /* InterfaceController.swift */,
+				B9B237B31DA6C22500A0761B /* ExtensionDelegate.swift */,
+				B9B237B51DA6C22500A0761B /* NotificationController.swift */,
+				B9B237B71DA6C22500A0761B /* ComplicationController.swift */,
+				B9B237B91DA6C22500A0761B /* Assets.xcassets */,
+				B9B237BB1DA6C22500A0761B /* Info.plist */,
+				B9B237AF1DA6C22500A0761B /* Supporting Files */,
+			);
+			path = "TalCookie WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		B9B237AF1DA6C22500A0761B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9B237B01DA6C22500A0761B /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9B237721DA6C22400A0761B /* TalCookie */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B237C61DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookie" */;
+			buildPhases = (
+				B9B2376F1DA6C22400A0761B /* Sources */,
+				B9B237701DA6C22400A0761B /* Frameworks */,
+				B9B237711DA6C22400A0761B /* Resources */,
+				B9B237C51DA6C22500A0761B /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B2379E1DA6C22400A0761B /* PBXTargetDependency */,
+			);
+			name = TalCookie;
+			productName = TalCookie;
+			productReference = B9B237731DA6C22400A0761B /* TalCookie.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B9B237861DA6C22400A0761B /* TalCookieTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B237C91DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookieTests" */;
+			buildPhases = (
+				B9B237831DA6C22400A0761B /* Sources */,
+				B9B237841DA6C22400A0761B /* Frameworks */,
+				B9B237851DA6C22400A0761B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B237891DA6C22400A0761B /* PBXTargetDependency */,
+			);
+			name = TalCookieTests;
+			productName = TalCookieTests;
+			productReference = B9B237871DA6C22400A0761B /* TalCookieTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B9B237911DA6C22400A0761B /* TalCookieUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B237CC1DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookieUITests" */;
+			buildPhases = (
+				B9B2378E1DA6C22400A0761B /* Sources */,
+				B9B2378F1DA6C22400A0761B /* Frameworks */,
+				B9B237901DA6C22400A0761B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B237941DA6C22400A0761B /* PBXTargetDependency */,
+			);
+			name = TalCookieUITests;
+			productName = TalCookieUITests;
+			productReference = B9B237921DA6C22400A0761B /* TalCookieUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+		B9B2379A1DA6C22400A0761B /* TalCookie WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B237C21DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookie WatchKit App" */;
+			buildPhases = (
+				B9B237991DA6C22400A0761B /* Resources */,
+				B9B237C11DA6C22500A0761B /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9B237AD1DA6C22500A0761B /* PBXTargetDependency */,
+			);
+			name = "TalCookie WatchKit App";
+			productName = "TalCookie WatchKit App";
+			productReference = B9B2379B1DA6C22400A0761B /* TalCookie WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		B9B237A91DA6C22500A0761B /* TalCookie WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9B237BE1DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookie WatchKit Extension" */;
+			buildPhases = (
+				B9B237A61DA6C22500A0761B /* Sources */,
+				B9B237A71DA6C22500A0761B /* Frameworks */,
+				B9B237A81DA6C22500A0761B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "TalCookie WatchKit Extension";
+			productName = "TalCookie WatchKit Extension";
+			productReference = B9B237AA1DA6C22500A0761B /* TalCookie WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9B2376B1DA6C22300A0761B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Computer Science House";
+				TargetAttributes = {
+					B9B237721DA6C22400A0761B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YK3F8A59N5;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
+					};
+					B9B237861DA6C22400A0761B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YK3F8A59N5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9B237721DA6C22400A0761B;
+					};
+					B9B237911DA6C22400A0761B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YK3F8A59N5;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B9B237721DA6C22400A0761B;
+					};
+					B9B2379A1DA6C22400A0761B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YK3F8A59N5;
+						ProvisioningStyle = Automatic;
+					};
+					B9B237A91DA6C22500A0761B = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = YK3F8A59N5;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = B9B2376E1DA6C22300A0761B /* Build configuration list for PBXProject "TalCookie" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B9B2376A1DA6C22300A0761B;
+			productRefGroup = B9B237741DA6C22400A0761B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9B237721DA6C22400A0761B /* TalCookie */,
+				B9B237861DA6C22400A0761B /* TalCookieTests */,
+				B9B237911DA6C22400A0761B /* TalCookieUITests */,
+				B9B2379A1DA6C22400A0761B /* TalCookie WatchKit App */,
+				B9B237A91DA6C22500A0761B /* TalCookie WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9B237711DA6C22400A0761B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B237811DA6C22400A0761B /* LaunchScreen.storyboard in Resources */,
+				B9B2377E1DA6C22400A0761B /* Assets.xcassets in Resources */,
+				B9B2377C1DA6C22400A0761B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B237851DA6C22400A0761B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B237901DA6C22400A0761B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B237991DA6C22400A0761B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B237A41DA6C22400A0761B /* Assets.xcassets in Resources */,
+				B9B237A21DA6C22400A0761B /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B237A81DA6C22500A0761B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B237BA1DA6C22500A0761B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9B2376F1DA6C22400A0761B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9F891971DA70696009D2D92 /* NotificationManager.swift in Sources */,
+				B9B237791DA6C22400A0761B /* ViewController.swift in Sources */,
+				B9F891A01DA71E8A009D2D92 /* QRReaderViewController.swift in Sources */,
+				B9F8919D1DA70CEB009D2D92 /* Utilities.swift in Sources */,
+				B9F891A21DA75930009D2D92 /* QRReaderNavigationViewController.swift in Sources */,
+				B9B237771DA6C22400A0761B /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B237831DA6C22400A0761B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B2378C1DA6C22400A0761B /* TalCookieTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B2378E1DA6C22400A0761B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B237971DA6C22400A0761B /* TalCookieUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9B237A61DA6C22500A0761B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9B237B61DA6C22500A0761B /* NotificationController.swift in Sources */,
+				B9B237B81DA6C22500A0761B /* ComplicationController.swift in Sources */,
+				B9B237B41DA6C22500A0761B /* ExtensionDelegate.swift in Sources */,
+				B9B237B21DA6C22500A0761B /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9B237891DA6C22400A0761B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B237721DA6C22400A0761B /* TalCookie */;
+			targetProxy = B9B237881DA6C22400A0761B /* PBXContainerItemProxy */;
+		};
+		B9B237941DA6C22400A0761B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B237721DA6C22400A0761B /* TalCookie */;
+			targetProxy = B9B237931DA6C22400A0761B /* PBXContainerItemProxy */;
+		};
+		B9B2379E1DA6C22400A0761B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B2379A1DA6C22400A0761B /* TalCookie WatchKit App */;
+			targetProxy = B9B2379D1DA6C22400A0761B /* PBXContainerItemProxy */;
+		};
+		B9B237AD1DA6C22500A0761B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9B237A91DA6C22500A0761B /* TalCookie WatchKit Extension */;
+			targetProxy = B9B237AC1DA6C22500A0761B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9B2377A1DA6C22400A0761B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B2377B1DA6C22400A0761B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B9B2377F1DA6C22400A0761B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B237801DA6C22400A0761B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		B9B237A01DA6C22400A0761B /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9B237A11DA6C22400A0761B /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9B237BC1DA6C22500A0761B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B9B237BD1DA6C22500A0761B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9B237BF1DA6C22500A0761B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				INFOPLIST_FILE = "TalCookie WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookie.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		B9B237C01DA6C22500A0761B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				INFOPLIST_FILE = "TalCookie WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookie.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		B9B237C31DA6C22500A0761B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				IBSC_MODULE = TalCookie_WatchKit_Extension;
+				INFOPLIST_FILE = "TalCookie WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookie.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Debug;
+		};
+		B9B237C41DA6C22500A0761B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				IBSC_MODULE = TalCookie_WatchKit_Extension;
+				INFOPLIST_FILE = "TalCookie WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookie.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.0;
+			};
+			name = Release;
+		};
+		B9B237C71DA6C22500A0761B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TalCookie/TalCookie.entitlements;
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				INFOPLIST_FILE = TalCookie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B9B237C81DA6C22500A0761B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = TalCookie/TalCookie.entitlements;
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				INFOPLIST_FILE = TalCookie/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookie;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B9B237CA1DA6C22500A0761B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				INFOPLIST_FILE = TalCookieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalCookie.app/TalCookie";
+			};
+			name = Debug;
+		};
+		B9B237CB1DA6C22500A0761B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				INFOPLIST_FILE = TalCookieTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookieTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TalCookie.app/TalCookie";
+			};
+			name = Release;
+		};
+		B9B237CD1DA6C22500A0761B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				INFOPLIST_FILE = TalCookieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TalCookie;
+			};
+			name = Debug;
+		};
+		B9B237CE1DA6C22500A0761B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = YK3F8A59N5;
+				INFOPLIST_FILE = TalCookieUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = edu.rit.csh.TalCookieUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = TalCookie;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9B2376E1DA6C22300A0761B /* Build configuration list for PBXProject "TalCookie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B237BC1DA6C22500A0761B /* Debug */,
+				B9B237BD1DA6C22500A0761B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B237BE1DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookie WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B237BF1DA6C22500A0761B /* Debug */,
+				B9B237C01DA6C22500A0761B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B237C21DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookie WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B237C31DA6C22500A0761B /* Debug */,
+				B9B237C41DA6C22500A0761B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B237C61DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookie" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B237C71DA6C22500A0761B /* Debug */,
+				B9B237C81DA6C22500A0761B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B237C91DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookieTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B237CA1DA6C22500A0761B /* Debug */,
+				B9B237CB1DA6C22500A0761B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9B237CC1DA6C22500A0761B /* Build configuration list for PBXNativeTarget "TalCookieUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9B237CD1DA6C22500A0761B /* Debug */,
+				B9B237CE1DA6C22500A0761B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9B2376B1DA6C22300A0761B /* Project object */;
+}

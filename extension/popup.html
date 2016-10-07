@@ -1,0 +1,37 @@
+<!doctype html>
+<!--
+ This page is shown when the extension button is clicked, because the
+ "browser_action" field in manifest.json contains the "default_popup" key with
+ value "popup.html".
+ -->
+<html>
+  <head>
+    <title>Tal Cookie</title>
+    <style>
+      body {
+        font-size: 100%;
+        min-width: 256px;
+      }
+      #toggle-notifs {
+        margin-bottom: 20px;
+      }
+    </style>
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="thirdParty/jquery-3.1.1.min.js"></script>
+    <script src="thirdParty/jquery.qrcode.min.js"></script>
+    <script src="popup.js"></script>
+  </head>
+  <body>
+    <h1>Tal Cookie</h1>
+    <div>Send Notifications <input type="checkbox" id="notifs"></input></div>
+    <p id="qrhelper">Scan the following QR code from the Tal Cookie app to pair your device:</p>
+    <div id="qrcode">Unable to register this browser.</div>
+  </body>
+</html>
+

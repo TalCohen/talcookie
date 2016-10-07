@@ -1,0 +1,35 @@
+{
+  "manifest_version": 2,
+
+  "name": "Tal Cookie (Beta)",
+  "description": "Click golden cookies in Cookie Clicker even when you're away from your computer!",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_popup": "popup.html",
+    "default_title": "Tal Cookie!"
+  },
+  "icons": {
+    "16": "assets/icon16.png",
+    "48": "assets/icon48.png",
+    "128": "assets/icon128.png"
+  },
+  "permissions": [
+    "tabs",
+    "http://gravity.csh.rit.edu/*",
+    "gcm",
+    "storage" 
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "http://orteil.dashnet.org/cookieclicker/"
+      ],
+      "js": ["thirdParty/jquery-3.1.1.min.js", "contentScript.js"]
+    }
+  ],
+  "background": {
+    "scripts": ["thirdParty/jquery-3.1.1.min.js", "eventPage.js"],
+    "persistent": false
+  }
+}
