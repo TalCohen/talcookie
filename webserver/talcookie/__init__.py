@@ -16,7 +16,7 @@ else:
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 # Create apns object
-ios_push = APNs(use_sandbox=True, cert_file='cert.pem', key_file='key.pem')
+ios_push = APNs(use_sandbox=True, cert_file=app.config.get('APNS_CERT_PEM', ''), key_file=app.config.get('APNS_KEY_PEM', ''))
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)

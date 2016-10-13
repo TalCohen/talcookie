@@ -11,3 +11,7 @@ SQLALCHEMY_DATABASE_URI = 'postgres://talcookie:thisisnotsecure@postgres.csh.rit
 
 # Firebase config
 SERVER_KEY = 'SERVER_KEY_GOES_HERE'
+
+# APNS config
+APNS_CERT_PEM = 'cert.pem' 
+APNS_KEY_PEM = 'key.pem' 
