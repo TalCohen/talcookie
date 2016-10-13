@@ -74,6 +74,13 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
             return
         }
         
+        // Get the identifier for the background task
+        // This has to be done, otherwise the request doesn't finish sending before
+        // The app goes into the background
+        var identifier = UIApplication.shared.beginBackgroundTask {
+            
+        }
+        
         // Make the request
         var request = URLRequest(url: URL(string: clickURLString)!)
         request.httpMethod = "POST"
@@ -92,9 +99,17 @@ class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
             
             let dataString = String(data: data!, encoding: .utf8)
             print(dataString)
+            
+            // End the background task
+            UIApplication.shared.endBackgroundTask(identifier)
+            identifier = UIBackgroundTaskInvalid;
         }
         print("sending request...")
-        task.resume()
+        
+        // Start the task on a background thread
+        DispatchQueue.global(qos: .background).async {
+            task.resume()
+        }
     }
     
     func userNotificationCenter(_ center: UNUserNotificationCenter, didReceive response: UNNotificationResponse, withCompletionHandler completionHandler: @escaping () -> Void) {
