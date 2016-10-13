@@ -46,9 +46,11 @@ def register_device():
         # Get the current client registered and update
         user_new = User.query.filter_by(client_id=client_id).first()
         user_new.device_token = device_token
+        user_new.ios = ios
 
         # Update the old entry
         user.device_token = None
+        user.ios = None
     else:
         # Otherwise pair the device
         # Get the user
