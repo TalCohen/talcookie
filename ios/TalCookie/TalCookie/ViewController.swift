@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController {
 
     let appDelegate = UIApplication.shared.delegate as! AppDelegate
-    let registerURLString = "http://gravity.csh.rit.edu:3333/register/device"
+    let registerURLString = "http://talcookie.app.csh.rit.edu/register/device"
     let errorString = "There was a problem with connecting to the Tal Cookie server. Please make sure you have an internet connection and try again."
     
     @IBOutlet weak var pairedLabel: UILabel!

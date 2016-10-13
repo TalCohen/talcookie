@@ -38,6 +38,11 @@ def register_device():
     # Check to see if they are upadting their client ID
     user = User.query.filter_by(device_token=device_token).first()
     if user:
+        # Update the old record
+        user_old = User.query.filter_by(client_id=user.client_id).first()
+        user_old.device_token = None
+
+        # Update the new record
         user.client_id = client_id
     else:
         # Otherwise pair the device

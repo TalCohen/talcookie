@@ -11,7 +11,7 @@ import UserNotifications
 
 class NotificationManager: NSObject, UNUserNotificationCenterDelegate {
     
-    let clickURLString = "http://gravity.csh.rit.edu:3333/click"
+    let clickURLString = "http://talcookie.app.csh.rit.edu/click"
     
     func registerForPushNotifications(application: UIApplication, viewController: UIViewController?) {
         // Get the notification center
