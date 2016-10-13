@@ -8,7 +8,11 @@ from flask_migrate import Migrate
 
 app = Flask(__name__)
 
-app.config.from_pyfile(os.path.join(os.getcwd(), "config.py"))
+if os.path.exists(os.path.join(os.getcwd(), "config.py")):
+    app.config.from_pyfile(os.path.join(os.getcwd(), "config.py"))
+else:
+    app.config.from_pyfile(os.path.join(os.getcwd(), "config.env.py"))
+
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
 # Create apns object
