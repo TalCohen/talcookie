@@ -16,7 +16,7 @@
   },
   "permissions": [
     "tabs",
-    "http://gravity.csh.rit.edu/*",
+    "http://talcookie.app.csh.rit.edu/*",
     "gcm",
     "storage" 
   ],
