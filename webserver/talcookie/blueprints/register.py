@@ -35,15 +35,20 @@ def register_device():
     if ios is None:
         return handle_response(False, "Invalid device type.")
 
+    # Check to see if this entry already exists
+    user = User.query.filter_by(client_id=client_id, device_token=device_token).first()
+    if user:
+        return handle_response(True, "Successfully paired device.")
+
     # Check to see if they are upadting their client ID
     user = User.query.filter_by(device_token=device_token).first()
     if user:
-        # Update the old record
-        user_old = User.query.filter_by(client_id=user.client_id).first()
-        user_old.device_token = None
+        # Get the current client registered and update
+        user_new = User.query.filter_by(client_id=user.client_id).first()
+        user_new.device_token = device_token
 
-        # Update the new record
-        user.client_id = client_id
+        # Update the old entry
+        user.device_token = None
     else:
         # Otherwise pair the device
         # Get the user
