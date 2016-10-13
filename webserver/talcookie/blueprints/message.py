@@ -51,6 +51,7 @@ def notify():
 @message_bp.route('/click', methods=['POST'])
 def click():
     device_token = request.form.get('device_token')
+    print(device_token)
 
     # Check if it's valid
     if not device_token:
