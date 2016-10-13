@@ -33,7 +33,7 @@ function checkGoldenCookie() {
 function notifyUser(isWrath, registrationId) {
     $.ajax({
         method: "POST",
-        url: "http://gravity.csh.rit.edu:3333/notify",
+        url: "http://talcookie.app.csh.rit.edu/notify",
         data: {
             is_wrath: isWrath,
             client_id: registrationId

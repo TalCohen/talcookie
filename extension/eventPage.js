@@ -21,7 +21,7 @@ function sendRegistrationId(registrationId, callback) {
   // in a secure way.
   $.ajax({
     method: "POST",
-    url: "http://gravity.csh.rit.edu:3333/register/client",
+    url: "http://talcookie.app.csh.rit.edu/register/client",
     data: { 
       client_id: registrationId
     },
