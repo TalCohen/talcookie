@@ -1,10 +1,10 @@
 import os
 
-from apns3 import APNs
-
 from flask import Flask, render_template
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
+
+from talcookie.utils.push import create_apns
 
 app = Flask(__name__)
 
@@ -15,8 +15,7 @@ else:
 
 app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = False
 
-# Create apns object
-ios_push = APNs(use_sandbox=True, cert_file=app.config.get('APNS_CERT_PEM', ''), key_file=app.config.get('APNS_KEY_PEM', ''))
+create_apns()
 
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
